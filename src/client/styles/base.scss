@@ -1,0 +1,41 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 2;
+}
+
+section {
+  max-width: 800px;
+  margin: 50px auto;
+}
+
+table {
+  border-collapse: collapse;
+  width: 90%;
+  margin: 3% 5%;
+  font: 1em sans-serif;
+  td {
+    padding: 15px;
+  }
+  tr th {
+    background-color: #54585d;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid #54585d;
+  }
+  tr td {
+    color: #636363;
+    border: 1px solid #dddfe1;
+  }
+  tr {
+    background-color: #f9fafb;
+  }
+  tr:nth-child(odd) {
+    background-color: #ffffff;
+  }
+}

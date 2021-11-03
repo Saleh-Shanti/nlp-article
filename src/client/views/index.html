@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+      <meta charset="utf-8">
+      <title>NLP project</title>
+     
+  </head>
+
+    
+ <body>
+      
+      <header>
+        <div class="">
+             Logo
+        </div>
+        <div class="">
+            navigation
+        </div>
+      </header>
+      
+      <main>
+        <section>
+          <form class="" onsubmit="return Client.handleSubmit(event)">
+            <fieldset>
+              <legend>Enter the article URL here :</legend>
+              <input id="NLP-article" type="text" name="input"  placeholder="URL">
+              <input type="submit"  value="submit" class="btn" id="Submit">
+            </fieldset>
+          </form>
+        <section>
+        
+            
+          <section>
+            <strong>NLP Results:</strong>
+            <div id="results">
+                  
+                <table >
+                <tr>
+                  <th>Agreement</th>
+                  <th>Score Tag</th>
+                  <th>Confidence</th>
+                  <th>Subjectivity</th>
+                  <th>Irony</th>
+                </tr>
+                <tr>
+                  <td id="agreement"></td>
+                  <td id="score"></td>
+                  <td id="confid"></td>
+                  <td id="subject"></td>
+                  <td id="iron"></td>
+                </tr>
+                
+
+            </table>
+                        
+          </div>
+          </section>
+      </main>
+
+      <footer>
+          <p>This is a footer</p>
+      </footer>
+
+    <script>
+      // Check that service workers are supported
+      if ('serviceWorker' in navigator) {
+        // Use the window load event to keep the page load performant
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/service-worker.js');
+        });
+      }
+    </script>
+  </body>
+
+</html>
