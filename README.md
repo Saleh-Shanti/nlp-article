@@ -14,6 +14,7 @@
 ## How to use it :
 
 - Install the packages using npm i
+- add .env file and add ur api_key
 - run 2 terminals :
 
   - npm run build-dev
